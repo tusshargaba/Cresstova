@@ -1,0 +1,106 @@
+<svg width="1800" height="600" viewBox="0 0 1800 600" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="wingGold1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#FFFBF0"/>
+    <stop offset="40%" stop-color="#E8C97A"/>
+    <stop offset="100%" stop-color="#8A6A2A"/>
+  </linearGradient>
+  <linearGradient id="wingGold2" x1="100%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#FFFBF0"/>
+    <stop offset="100%" stop-color="#C9A84C"/>
+  </linearGradient>
+  <linearGradient id="textGold" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#8A6A2A"/>
+    <stop offset="15%" stop-color="#C9A84C"/>
+    <stop offset="35%" stop-color="#F5E6C0"/>
+    <stop offset="50%" stop-color="#FFFBF0"/>
+    <stop offset="65%" stop-color="#F5E6C0"/>
+    <stop offset="85%" stop-color="#C9A84C"/>
+    <stop offset="100%" stop-color="#8A6A2A"/>
+  </linearGradient>
+  <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FFFFFF"/>
+    <stop offset="100%" stop-color="#F5E6C0"/>
+  </radialGradient>
+  <linearGradient id="planeGold" x1="0%" y1="50%" x2="100%" y2="50%">
+    <stop offset="0%" stop-color="#7A5A1A"/>
+    <stop offset="50%" stop-color="#F5E6C0"/>
+    <stop offset="100%" stop-color="#C9A84C"/>
+  </linearGradient>
+  <linearGradient id="trailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#C9A84C" stop-opacity="0"/>
+    <stop offset="70%" stop-color="#C9A84C" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#C9A84C" stop-opacity="0.55"/>
+  </linearGradient>
+</defs>
+
+<!-- ═══════════ EMBLEM (centered at x=170, y=300) ═══════════ -->
+<g transform="translate(170,300)">
+
+  <!-- outer ring -->
+  <circle cx="0" cy="0" r="148" stroke="#C9A84C" stroke-width="2" fill="none" opacity="0.45"/>
+  <!-- dashed inner ring -->
+  <circle cx="0" cy="0" r="128" stroke="#B8CAFF" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="8 14"/>
+
+  <!-- LEFT WING -->
+  <path d="M0,0 C-36,-22 -68,-38 -136,-38 C-118,-15 -94,0 -36,0 Z" fill="url(#wingGold1)" opacity="0.92"/>
+  <path d="M0,0 C-27,-19 -82,-46 -120,-46 C-102,-27 -65,-9 -42,0 Z" fill="url(#wingGold1)" opacity="0.55"/>
+  <path d="M0,0 C-19,-14 -95,-54 -104,-38" fill="none" stroke="#FFFBF0" stroke-width="2" opacity="0.4"/>
+
+  <!-- RIGHT WING -->
+  <path d="M0,0 C36,-22 68,-38 136,-38 C118,-15 94,0 36,0 Z" fill="url(#wingGold2)" opacity="0.92"/>
+  <path d="M0,0 C27,-19 82,-46 120,-46 C102,-27 65,-9 42,0 Z" fill="url(#wingGold2)" opacity="0.55"/>
+  <path d="M0,0 C19,-14 95,-54 104,-38" fill="none" stroke="#FFFBF0" stroke-width="2" opacity="0.4"/>
+
+  <!-- FUSELAGE -->
+  <ellipse cx="0" cy="0" rx="22" ry="41" fill="url(#wingGold1)"/>
+  <ellipse cx="-6" cy="-14" rx="9" ry="20" fill="#FFFBF0" opacity="0.5"/>
+
+  <!-- NOSE -->
+  <path d="M-11,-36 L0,-78 L11,-36 Z" fill="url(#wingGold1)"/>
+  <path d="M-5,-36 L0,-78 L5,-36 Z" fill="#FFFFFF"/>
+
+  <!-- TAIL -->
+  <path d="M-11,36 L0,72 L11,36 Z" fill="url(#wingGold1)" opacity="0.75"/>
+
+  <!-- CENTER STAR -->
+  <circle cx="0" cy="0" r="16" fill="url(#centerGlow)"/>
+  <circle cx="0" cy="0" r="8" fill="#FFFFFF"/>
+
+  <!-- CARDINAL DIAMONDS (N S E W) -->
+  <path d="M0,-148 L10,-128 L0,-108 L-10,-128 Z" fill="#C9A84C"/>
+  <path d="M0,148 L10,128 L0,108 L-10,128 Z" fill="#C9A84C"/>
+  <path d="M-148,0 L-128,10 L-108,0 L-128,-10 Z" fill="#C9A84C"/>
+  <path d="M148,0 L128,10 L108,0 L128,-10 Z" fill="#C9A84C"/>
+</g>
+
+<!-- ═══════════ WORDMARK ═══════════ -->
+<g transform="translate(400,0)">
+  <text x="0" y="320" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700"
+        font-size="118" letter-spacing="0.12em" fill="url(#textGold)">CRESSTOVA</text>
+
+  <!-- Rule line -->
+  <line x1="2" y1="380" x2="280" y2="380" stroke="#C9A84C" stroke-width="1.5" opacity="0.6"/>
+  <path d="M300,380 L310,372 L320,380 L310,388 Z" fill="#C9A84C"/>
+  <line x1="340" y1="380" x2="620" y2="380" stroke="#C9A84C" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="290" cy="380" r="3" fill="#C9A84C" opacity="0.6"/>
+  <circle cx="330" cy="380" r="3" fill="#C9A84C" opacity="0.6"/>
+
+  <!-- Tagline -->
+  <text x="2" y="420" font-family="Georgia, serif" font-size="28" letter-spacing="9"
+        fill="#8AAAE8">ELEVATE EVERY JOURNEY</text>
+</g>
+
+<!-- ═══════════ FLYING PLANE ═══════════ -->
+<line x1="260" y1="105" x2="1005" y2="105" stroke="url(#trailGrad)" stroke-width="2.5"/>
+<g transform="translate(1020,105) rotate(-7) scale(3.3)">
+  <g transform="translate(-25,-15)">
+    <path d="M2 16 C9 14 32 9 48 15 C44 17 9 19 2 16 Z" fill="url(#planeGold)"/>
+    <path d="M16 15 L10 5  L26 13 Z" fill="url(#planeGold)" opacity="0.92"/>
+    <path d="M16 17 L10 27 L26 19 Z" fill="url(#planeGold)" opacity="0.72"/>
+    <path d="M5 15 L2 9  L12 14 Z" fill="url(#planeGold)" opacity="0.85"/>
+    <ellipse cx="42" cy="15" rx="4" ry="2.5" fill="#FFFBF0" opacity="0.55"/>
+  </g>
+</g>
+
+</svg>
